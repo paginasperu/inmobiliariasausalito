@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Las Flores Plaza. | Centro Comercial & Servicios</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .accent-yellow { color: #FACC15; }
+    .bg-accent-yellow { background-color: #FACC15; }
+    .bg-gradient-city { background: linear-gradient(135deg, #111827 0%, #1F2937 50%, #111827 100%); }
+    .badge-purple { background: #7C3AED; }
+  </style>
+</head>
+<body class="bg-gray-950 text-white min-h-screen">
+
+  <!-- Header Section -->
+  <header class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center border-b border-gray-800">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-yellow-400 text-black font-extrabold flex items-center justify-center rounded-xl text-xl shadow-lg shadow-yellow-400/20">LF</div>
+      <div>
+        <span class="text-xs uppercase tracking-widest text-gray-400 block font-semibold">Inmobiliaria Sausalito</span>
+        <h1 class="text-2xl font-black tracking-tight text-white leading-none">Las Flores<span class="text-yellow-400">.</span></h1>
+      </div>
+    </div>
+
+    <nav class="hidden md:flex items-center gap-8 text-sm font-bold text-gray-300">
+      <a href="#inicio" class="hover:text-yellow-400 transition-colors">Inicio</a>
+      <a href="#locales" class="hover:text-yellow-400 transition-colors">Locales</a>
+      <a href="#ubicacion" class="hover:text-yellow-400 transition-colors">Ubicación</a>
+      <a href="#contacto" class="hover:text-yellow-400 transition-colors">Contacto</a>
+    </nav>
+
+    <a href="https://wa.me/51970175777" target="_blank" class="bg-yellow-400 hover:bg-yellow-300 text-black font-extrabold px-5 py-2.5 rounded-xl text-sm transition-all transform hover:-translate-y-0.5 shadow-lg shadow-yellow-400/20 flex items-center gap-2">
+      <i class="fab font-normal fa-whatsapp text-lg"></i> Consultar Alquiler
+    </a>
+  </header>
+
+  <!-- Hero Section estilo City Plaza -->
+  <section class="max-w-7xl mx-auto px-6 py-12 lg:py-20 grid lg:grid-cols-12 gap-12 items-center">
+    
+    <!-- Columna Izquierda: Texto e Identizadores -->
+    <div class="lg:col-span-7 space-y-8">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-gray-800/80 border border-gray-700 text-xs font-bold uppercase tracking-wider text-yellow-400">
+        <i class="fas font-normal fa-award"></i> Centro Comercial Tradicional de Breña
+      </div>
+
+      <div class="space-y-4">
+        <h2 class="text-5xl lg:text-7xl font-extrabold tracking-tight leading-none text-white">
+          Las Flores<span class="text-yellow-400">.</span>
+        </h2>
+        <p class="text-2xl lg:text-3xl font-bold text-gray-200">
+          Shopping & Local Market Center
+        </p>
+        <p class="text-gray-400 text-lg max-w-xl">
+          Tu punto de encuentro en el corazón de Breña. Más de 450 locales comerciales para compras familiares, servicios y oportunidades de negocio.
+        </p>
+      </div>
+
+      <!-- Feature Badges Grid (Replicando estética de badges laterales) -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4">
+        <div class="bg-gray-900 border border-gray-800 p-4 rounded-2xl flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-purple-600/20 text-purple-400 flex items-center justify-center font-bold">
+            <i class="fas font-normal fa-store"></i>
+          </div>
+          <div>
+            <span class="block text-xs text-gray-400 font-semibold">Locales</span>
+            <span class="font-extrabold text-white">450+</span>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 border border-gray-800 p-4 rounded-2xl flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-yellow-400/20 text-yellow-400 flex items-center justify-center font-bold">
+            <i class="fas font-normal fa-tag"></i>
+          </div>
+          <div>
+            <span class="block text-xs text-gray-400 font-semibold">Precios</span>
+            <span class="font-extrabold text-white">Ahorro</span>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 border border-gray-800 p-4 rounded-2xl flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">
+            <i class="fas font-normal fa-shield-alt"></i>
+          </div>
+          <div>
+            <span class="block text-xs text-gray-400 font-semibold">Entorno</span>
+            <span class="font-extrabold text-white">Seguro</span>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 border border-gray-800 p-4 rounded-2xl flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center font-bold">
+            <i class="fas font-normal fa-clock"></i>
+          </div>
+          <div>
+            <span class="block text-xs text-gray-400 font-semibold">Horario</span>
+            <span class="font-extrabold text-white">Lun - Dom</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer CTA Pill -->
+      <div class="flex flex-wrap gap-4 pt-2">
+        <a href="#ubicacion" class="bg-purple-600 hover:bg-purple-500 text-white font-extrabold px-6 py-3.5 rounded-xl text-sm transition-all flex items-center gap-2 shadow-lg shadow-purple-600/25">
+          <i class="fas font-normal fa-map-marker-alt"></i> Ver Ubicación
+        </a>
+        <a href="#locales" class="bg-gray-800 hover:bg-gray-700 text-white font-extrabold px-6 py-3.5 rounded-xl text-sm transition-all flex items-center gap-2 border border-gray-700">
+          <i class="fas font-normal fa-shopping-bag"></i> Explora Rubros
+        </a>
+      </div>
+    </div>
+
+    <!-- Columna Derecha: Mockup & Imagen Destacada con overlay de tarjetas -->
+    <div class="lg:col-span-5 relative">
+      <!-- Glow background -->
+      <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-yellow-400 rounded-3xl blur-2xl opacity-20"></div>
+
+      <!-- Tarjeta Principal con foto -->
+      <div class="relative bg-gray-900 border border-gray-800 rounded-3xl p-4 overflow-hidden shadow-2xl">
+        <div class="h-96 rounded-2xl bg-cover bg-center relative overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80');">
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/20 to-transparent"></div>
+          
+          <div class="absolute top-4 left-4 bg-yellow-400 text-black font-black text-xs px-3 py-1.5 rounded-lg uppercase tracking-wider shadow">
+            En el corazón de Breña
+          </div>
+
+          <div class="absolute bottom-4 left-4 right-4 bg-gray-900/90 backdrop-blur-md p-4 rounded-xl border border-gray-800">
+            <p class="text-xs text-gray-400 uppercase font-bold tracking-wider">Dirección Principal</p>
+            <p class="text-sm font-extrabold text-white">Jr. Juan Pablo Fernandini 656, Breña</p>
+          </div>
+        </div>
+
+        <!-- Float Badges al estilo del Theme -->
+        <div class="grid grid-cols-2 gap-3 mt-4">
+          <div class="bg-purple-600 text-white p-3.5 rounded-xl font-bold text-center text-xs flex items-center justify-center gap-2 shadow">
+            <i class="fas font-normal fa-check-circle"></i> Galería Comercial
+          </div>
+          <div class="bg-yellow-400 text-black p-3.5 rounded-xl font-black text-center text-xs flex items-center justify-center gap-2 shadow">
+            <i class="fas font-normal fa-rocket"></i> Emprende Aquí
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Grid Section -->
+  <section id="locales" class="max-w-7xl mx-auto px-6 py-12 border-t border-gray-800">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-widest text-yellow-400">Variedad & Servicios</span>
+        <h3 class="text-3xl font-extrabold text-white mt-1">Sectores Comerciales</h3>
+      </div>
+      <p class="text-gray-400 text-sm max-w-md mt-2 md:mt-0">Encuentra insumos, artículos para el hogar, ropa, servicios y soluciones inmediatas en un solo lugar.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-gray-900 border border-gray-800 p-6 rounded-2xl hover:border-yellow-400/50 transition-all">
+        <div class="w-12 h-12 bg-yellow-400/10 text-yellow-400 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+          <i class="fas font-normal fa-shopping-basket"></i>
+        </div>
+        <h4 class="text-xl font-bold text-white mb-2">Para Tu Hogar</h4>
+        <p class="text-gray-400 text-sm">Alimentos, abarrotes, artículos de primera necesidad y servicios para el día a día.</p>
+      </div>
+
+      <div class="bg-gray-900 border border-gray-800 p-6 rounded-2xl hover:border-purple-500/50 transition-all">
+        <div class="w-12 h-12 bg-purple-500/10 text-purple-400 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+          <i class="fas font-normal fa-briefcase"></i>
+        </div>
+        <h4 class="text-xl font-bold text-white mb-2">Para Emprender</h4>
+        <p class="text-gray-400 text-sm">Insumos, soluciones comerciales, servicios y locales estratégicos para hacer crecer tu negocio.</p>
+      </div>
+
+      <div class="bg-gray-900 border border-gray-800 p-6 rounded-2xl hover:border-emerald-500/50 transition-all sm:col-span-2 lg:col-span-1">
+        <div class="w-12 h-12 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+          <i class="fas font-normal fa-users"></i>
+        </div>
+        <h4 class="text-xl font-bold text-white mb-2">Para Todos</h4>
+        <p class="text-gray-400 text-sm">Compras rápidas, atención cercana y accesibilidad en una ubicación tradicional de Breña.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Ubicación y Contacto Directo -->
+  <section id="ubicacion" class="max-w-7xl mx-auto px-6 py-12">
+    <div class="bg-gradient-to-r from-gray-900 via-gray-900 to-purple-950/40 border border-gray-800 rounded-3xl p-8 lg:p-12">
+      <div class="grid lg:grid-cols-3 gap-8 items-center">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-yellow-400">Horarios & Ubicación</span>
+          <h3 class="text-3xl font-extrabold text-white mt-1 mb-4">Visítanos Hoy</h3>
+          <ul class="space-y-3 text-sm text-gray-300">
+            <li class="flex items-start gap-3">
+              <i class="fas font-normal fa-map-marker-alt text-yellow-400 mt-1"></i>
+              <span><strong>Dirección:</strong> Jr. Juan Pablo Fernandini 656, Breña, Lima.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas font-normal fa-clock text-yellow-400 mt-1"></i>
+              <span><strong>Lun - Sáb:</strong> 7:00 am - 9:00 pm<br><strong>Dom:</strong> 7:00 am - 6:00 pm</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-purple-400">Central Telefónica</span>
+          <h3 class="text-3xl font-extrabold text-white mt-1 mb-4">Contacto Directo</h3>
+          <p class="text-sm text-gray-400 mb-3">Atención administrativa e informes sobre disponibilidad de locales:</p>
+          <div class="space-y-1 text-sm font-bold text-gray-200">
+            <p><i class="fas font-normal fa-phone text-purple-400 mr-2"></i> 01 228 1937</p>
+            <p><i class="fab font-normal fa-whatsapp text-emerald-400 mr-2"></i> 970 175 777 / 981 593 998 / 907 420 836</p>
+          </div>
+        </div>
+
+        <div class="text-center lg:text-right">
+          <a href="https://maps.google.com/?q=Jr.+Juan+Pablo+Fernandini+656,+Breña" target="_blank" class="inline-flex items-center justify-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-black font-black px-8 py-4 rounded-2xl text-base transition-all shadow-xl shadow-yellow-400/20 w-full sm:w-auto">
+            <i class="fas font-normal fa-directions"></i> Abrir en Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contacto" class="max-w-7xl mx-auto px-6 py-8 border-t border-gray-800 text-xs text-gray-500 flex flex-col sm:flex-row justify-between items-center gap-4">
+    <p>© 2026 Centro Comercial Las Flores de Breña. Todos los derechos reservados.</p>
+    <div class="flex gap-6 font-bold text-gray-400">
+      <span>Variedad</span>
+      <span>•</span>
+      <span>Ahorro</span>
+      <span>•</span>
+      <span>Progreso</span>
+    </div>
+  </footer>
+
+</body>
+</html>
